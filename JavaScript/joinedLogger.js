@@ -5,6 +5,6 @@ function joinedLogger(level, sep) {
         filteredArgs.forEach(message => {
           loggerString += filteredArgs.indexOf(message) !== filteredArgs.length - 1 ? message.text + sep : message.text;
         });
-        logger({text : loggerString});
+        console.log({text : loggerString});
     }
   }
